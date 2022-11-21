@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo App</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="main-body">
+        <div class="overlay hide">
+          <p class="switch" id="overlay-close">x</p>
+          <h1>What do you want to do ?</h1>
+          <form action="">
+            <textarea
+              spellcheck="false"
+              placeholder="Max 72 characters"
+              maxlength="72"
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+            ></textarea>
+            <div style="display: flex; gap: 20px">
+              <p><input checked type="radio" name="asd" id="" /> Casual</p>
+              <p><input type="radio" name="asd" id="" /> Urgent</p>
+            </div>
+            <button class="" type="submit">Add Task</button>
+          </form>
+        </div>
+        <div class="header">
+          <p class="day"></p>
+          <div class="month-date">
+            <p class="date"></p>
+            <p class="month"></p>
+          </div>
+          <button class="switch btn-main">+</button>
+        </div>
+        <div class="motto">
+          <p>per aspera ad astra!</p>
+        </div>
+        <div class="task-container"></div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
